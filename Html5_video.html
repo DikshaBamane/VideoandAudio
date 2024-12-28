@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio And Video</title>
+</head>
+
+<body>
+    <!-- <video src="https://media.w3.org/2010/05/sintel/trailer.mp4" style="height: 500px;width: 800px;" autoplay controls>
+    </video> -->
+
+    <center>
+        <video controls src="https://media.w3.org/2010/05/sintel/trailer.mp4" id="myVideo" style="height: 400px;width: 800px;">
+        </video>
+        <hr>
+        <button 
+        onclick="play()">
+        <img src="trailer.png" alt="" style="height: 50px;width: 150px;">
+        </button>
+
+        <button 
+        onclick="stop()">
+        <img src="stopped.jpg" alt="" style="height: 50px;width: 150px;">
+        </button>
+    </center>
+    <script>
+        function play(){
+            var refTotestVideo=document.getElementById("myVideo");
+            refTotestVideo.play();
+        }
+
+        function stop(){
+            var refTotestVideo=document.getElementById("myVideo");
+            refTotestVideo.pause();
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
