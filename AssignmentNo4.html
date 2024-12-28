@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+  
+    <h1>Calculator</h1>
+ 
+  Enter Number 1: 
+    <input type="number" name="" id="val1"><br><br>
+    Enter Number 2:
+    <input type="number" name="" id="val2"> <br><br>
+  Result:
+    <input type="number" name="" id="result">
+    <br><br>
+    <button onclick="calAdd()">Addition</button> &nbsp;&nbsp;
+    <button onclick="calSub()">Subtraction</button>  &nbsp;&nbsp;
+    <button onclick="calDiv()">Division</button> &nbsp;&nbsp;
+    <button onclick="calMul()">Multiplication</button> &nbsp;&nbsp;
+    
+
+    <script>
+        function calAdd(){
+            var val1=document.getElementById('val1').value;
+            var val2=document.getElementById('val2').value;
+          var res=parseInt(val1) + parseInt(val2);
+          document.getElementById("result").value=res;
+          
+          console.log(res);
+        }
+
+        function calSub(){
+            var val1=document.getElementById('val1').value;
+            var val2=document.getElementById('val2').value;
+          var res=parseInt(val1) - parseInt(val2);
+          document.getElementById("result").value=res;
+          console.log(res);
+        }
+
+        function calDiv(){
+            var val1=document.getElementById('val1').value;
+            var val2=document.getElementById('val2').value;
+          var res=parseInt(val1) / parseInt(val2);
+          document.getElementById("result").value=res;
+          console.log(res);
+        }
+
+        function calMul(){
+            var val1=document.getElementById('val1').value;
+            var val2=document.getElementById('val2').value;
+          var res=parseInt(val1) * parseInt(val2);
+          document.getElementById("result").value=res;
+          console.log(res);
+        }
+    </script>
+</body>
+</html>
